@@ -20,6 +20,11 @@ public class UnaryExpression extends Expression {
     }
 
     @Override
+    public String gen() {
+        return null;
+    }
+
+    @Override
     public int eval(State<Integer> s) throws IOException {
         if(op == Op.MINUS) {
             return - exp.eval(s);

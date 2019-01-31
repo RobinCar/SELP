@@ -21,6 +21,11 @@ public class Body extends AST {
         return "Body(" + defs + " " + exp + ")";
     }
 
+    @Override
+    public String gen() {
+        return null;
+    }
+
     public int eval(State<Integer> s) throws IOException {
         for (VarDef f:defs){
             f.eval(s);

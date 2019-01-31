@@ -17,6 +17,11 @@ public class BooleanLiteral extends Expression {
     }
 
     @Override
+    public String gen() {
+        return null;
+    }
+
+    @Override
     public int eval(State<Integer> s) throws IOException {
         if(bool) return 1;
         else return 0;

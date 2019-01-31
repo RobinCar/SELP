@@ -15,9 +15,14 @@ varDef   : '(' '=' variableId expression ')'
 expression : LITERAL                                            #Literal
            | BOOLEAN                                            #BooleanLiteral
            | '(' expression ')'                                 #ParenExpression
-           | variableId                                         #Variable
            | (MINUS | NOT) expression                           #UnaryExpression
-           | expression (OP | MINUS) expression                 #BinaryExpression
+           | expression MULTIPLICATIVE expression                 #BinaryExpression
+           | expression ADDITIVE expression                 #BinaryExpression
+           | expression RELATIONAL expression                 #BinaryExpression
+           | expression EQUALITY expression                 #BinaryExpression
+           | expression AND expression                 #BinaryExpression
+           | expression OR expression                 #BinaryExpression
+           | variableId                                         #Variable
            | <assoc = right> expression '?' expression ':' expression           #ConditionalExpression
            | functionId expression*                             #FunctionCall
            ;
@@ -31,6 +36,12 @@ functionId : IDENTIFIER
 BOOLEAN  : 'true'
          | 'false'
          ;
+MULTIPLICATIVE : '*' | '/';
+ADDITIVE : '+' | '-';
+RELATIONAL : '<' | '>' | '<=' | '>=';
+EQUALITY : '==' | '!=';
+AND : '&&';
+OR : '||';
 MINUS    : '-'
          ;
 NOT      : '!'

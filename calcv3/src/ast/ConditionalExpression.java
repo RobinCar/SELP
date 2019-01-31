@@ -20,6 +20,11 @@ public class ConditionalExpression extends Expression {
     }
 
     @Override
+    public String gen() {
+        return null;
+    }
+
+    @Override
     public int eval(State<Integer> s) throws IOException {
         if(exp1.eval(s) == 0) return exp3.eval(s);
         else return exp2.eval(s);

@@ -14,6 +14,11 @@ public class Literal extends Expression {
     }
 
     @Override
+    public String gen() {
+        return Integer.toString(val);
+    }
+
+    @Override
     public int eval(State<Integer> s) {
         return val;
     }

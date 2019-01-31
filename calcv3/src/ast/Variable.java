@@ -24,4 +24,9 @@ public class Variable extends Expression {
     public String toString() {
         return "Variable(" + var + ")";
     }
+
+    @Override
+    public String gen() {
+        return null;
+    }
 }

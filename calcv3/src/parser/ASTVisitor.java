@@ -43,21 +43,54 @@ public class ASTVisitor extends CalcBaseVisitor<AST> {
     public AST visitBinaryExpression(CalcParser.BinaryExpressionContext ctx) {
         Op op = null;
 
-        if(ctx.OP() != null) {
+        if(ctx.MULTIPLICATIVE() != null) {
             try {
-                op = Op.parseOp(ctx.OP().getText());
+                op = Op.parseOp(ctx.MULTIPLICATIVE().getText());
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
 
-        else {
+        else if(ctx.ADDITIVE() != null){
             try {
-                op = Op.parseOp(ctx.MINUS().getText());
+                op = Op.parseOp(ctx.ADDITIVE().getText());
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
+        else if(ctx.RELATIONAL() != null){
+            try {
+                op = Op.parseOp(ctx.RELATIONAL().getText());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        else if(ctx.EQUALITY() != null){
+            try {
+                op = Op.parseOp(ctx.EQUALITY().getText());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        else if(ctx.AND() != null){
+            try {
+                op = Op.parseOp(ctx.AND().getText());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        else if(ctx.OR() != null){
+            try {
+                op = Op.parseOp(ctx.OR().getText());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
         List<CalcParser.ExpressionContext> expressionCtx = ctx.expression();
         Expression exp1 = (Expression) visit(expressionCtx.get(0));
         Expression exp2 = (Expression) visit(expressionCtx.get(1));

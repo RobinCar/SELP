@@ -12,4 +12,7 @@ public class ErrorFlag {
         ErrorFlag.flag = false;
     }
 
+    public static boolean getFlag() {
+        return ErrorFlag.flag;
+    }
 }

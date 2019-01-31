@@ -21,6 +21,11 @@ public class BinaryExpression extends Expression {
     }
 
     @Override
+    public String gen() {
+        return null;
+    }
+
+    @Override
     public int eval(State<Integer> s) throws IOException {
         if(op == Op.MINUS) {
             return exp1.eval(s) - exp2.eval(s);

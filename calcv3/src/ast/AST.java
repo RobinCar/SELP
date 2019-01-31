@@ -2,7 +2,7 @@ package ast;
 
 import java.lang.reflect.Field;
 
-public class AST {
+public abstract class AST {
     public String toString() {
         // retrieve class of node
         Class<? extends AST> tclass = this.getClass();
@@ -32,4 +32,6 @@ public class AST {
         return relativeClassName + "(" + args + ")";
 //		return "<" + relativeClassName + ">" + args + "</" + relativeClassName + ">";
     }
+
+    public abstract String gen();
 }

@@ -21,6 +21,11 @@ public class VarDef extends AST {
         return "VarDef(" + var + " = " + exp + ")";
     }
 
+    @Override
+    public String gen() {
+        return null;
+    }
+
     public void eval(State<Integer> s) throws IOException {
         if(s.containsKey(var.getVar())) throw new IOException("Variable deja presente");
         s.bind(var.getVar(), exp.eval(s));
