@@ -55,6 +55,13 @@ public interface CalcVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBinaryExpression(CalcParser.BinaryExpressionContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code BooleanLiteral}
+	 * labeled alternative in {@link CalcParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBooleanLiteral(CalcParser.BooleanLiteralContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code Literal}
 	 * labeled alternative in {@link CalcParser#expression}.
 	 * @param ctx the parse tree
@@ -76,12 +83,12 @@ public interface CalcVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitParenExpression(CalcParser.ParenExpressionContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code UnaryMinus}
+	 * Visit a parse tree produced by the {@code UnaryExpression}
 	 * labeled alternative in {@link CalcParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitUnaryMinus(CalcParser.UnaryMinusContext ctx);
+	T visitUnaryExpression(CalcParser.UnaryExpressionContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code FunctionCall}
 	 * labeled alternative in {@link CalcParser#expression}.

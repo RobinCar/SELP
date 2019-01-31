@@ -39,6 +39,44 @@ public enum Op {
         public String toString() {
             return "LESS";
         }
+    },
+
+    MORE {
+        public String toString() { return "MORE"; }
+    },
+
+    MOREOREQUAL {
+        public String toString() {
+            return "MOREOREQUAL";
+        }
+    },
+
+    LESSOREQUAL {
+        public String toString() {
+            return "LESSOREQUAL";
+        }
+    },
+
+    NOTEQUAL {
+        public String toString() {
+            return "NOTEQUAL";
+        }
+    },
+
+    AND {
+        public String toString() {
+            return "AND";
+        }
+    },
+
+    OR {
+        public String toString() {
+            return "OR";
+        }
+    },
+
+    NOT {
+        public String toString() { return "NOT"; }
     };
 
     public static Op parseOp(String op) throws IOException {
@@ -48,7 +86,14 @@ public enum Op {
             case "*" : return Op.TIMES;
             case "/" : return Op.DIVIDE;
             case "==" : return Op.EQUAL;
+            case ">" : return Op.MORE;
             case "<" : return Op.LESS;
+            case "<=" : return Op.LESSOREQUAL;
+            case ">=" : return Op.MOREOREQUAL;
+            case "&&" : return Op.AND;
+            case "||" : return Op.OR;
+            case "!" : return Op.NOT;
+            case "!=" : return Op.NOTEQUAL;
             default : throw  new SyntaxError("Can't find Symbol");
         }
     }

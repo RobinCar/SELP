@@ -17,7 +17,7 @@ public class BinaryExpression extends Expression {
     }
 
     public String toString() {
-        return "BinaryExpression(" + op + " " + exp1 + " " + exp2 + ")";
+        return "BinaryExpression(" + exp1 + " " + op + " " + exp2 + ")";
     }
 
     @Override
@@ -44,6 +44,24 @@ public class BinaryExpression extends Expression {
         }
         else if(op == Op.LESS) {
             return exp1.eval(s) < exp2.eval(s) ? 1 : 0;
+        }
+        else if(op == Op.MORE) {
+            return exp1.eval(s) > exp2.eval(s) ? 1 : 0;
+        }
+        else if(op == Op.MOREOREQUAL) {
+            return exp1.eval(s) >= exp2.eval(s) ? 1 : 0;
+        }
+        else if(op == Op.LESSOREQUAL) {
+            return exp1.eval(s) <= exp2.eval(s) ? 1 : 0;
+        }
+        else if(op == Op.NOTEQUAL) {
+            return exp1.eval(s) != exp2.eval(s) ? 1 : 0;
+        }
+        else if(op == Op.AND) {
+            return (exp1.eval(s) != 0 && exp2.eval(s) != 0) ? 1 : 0;
+        }
+        else if(op == Op.OR) {
+            return (exp1.eval(s) != 0 || exp2.eval(s) != 0) ? 1 : 0;
         }
         throw new ArithmeticException();
     }

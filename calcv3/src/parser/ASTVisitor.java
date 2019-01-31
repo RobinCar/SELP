@@ -30,9 +30,13 @@ public class ASTVisitor extends CalcBaseVisitor<AST> {
     }
 
     @Override
-    public AST visitUnaryMinus(CalcParser.UnaryMinusContext ctx) {
+    public AST visitUnaryExpression(CalcParser.UnaryExpressionContext ctx) {
         Expression exp1 = (Expression) visit(ctx.expression());
-        return new UnaryMinus(exp1);
+        if(ctx.MINUS() != null)
+            return new UnaryExpression(exp1, Op.MINUS);
+        else if(ctx.NOT() != null)
+            return new UnaryExpression(exp1, Op.NOT);
+        else throw new SyntaxError("Error");
     }
 
     @Override
@@ -70,12 +74,19 @@ public class ASTVisitor extends CalcBaseVisitor<AST> {
     }
 
     @Override
+    public AST visitBooleanLiteral(CalcParser.BooleanLiteralContext ctx) {
+        String bool = ctx.BOOLEAN().getText();
+        if(bool.equals("true")) return new BooleanLiteral(true);
+        else return new BooleanLiteral(false);
+    }
+
+    @Override
     public AST visitParenExpression(CalcParser.ParenExpressionContext ctx) {
         CalcParser.ExpressionContext exp = ctx.expression();
 
         if(exp instanceof CalcParser.LiteralContext) return this.visitLiteral((CalcParser.LiteralContext)exp);
         else if(exp instanceof CalcParser.VariableContext) return this.visitVariable((CalcParser.VariableContext)exp);
-        else if(exp instanceof CalcParser.UnaryMinusContext) return this.visitUnaryMinus((CalcParser.UnaryMinusContext)exp);
+        else if(exp instanceof CalcParser.UnaryExpressionContext) return this.visitUnaryExpression((CalcParser.UnaryExpressionContext)exp);
         else if(exp instanceof CalcParser.ConditionalExpressionContext) return this.visitConditionalExpression((CalcParser.ConditionalExpressionContext)exp);
         else if(exp instanceof CalcParser.BinaryExpressionContext) return this.visitBinaryExpression((CalcParser.BinaryExpressionContext)exp);
         else throw new SyntaxError("Error parenthèse");

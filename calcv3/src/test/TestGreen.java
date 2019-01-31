@@ -1,34 +1,40 @@
 package test;
 
 public class TestGreen extends Test {
-	
+	/**
+	 * Entry point. Executes all the tests. 
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args){
-		Test.main(args);
-		// CalcOld Green
-		verbose = true;
-		test(verbose, "test/greenZeroUnix.calc", "0", "0");
-		test(verbose, "test/greenZeroDos.calc", "0", "0");
-		test(verbose, "test/greenZeroTab.calc", "0", "0");
-		test(verbose, "test/greenOne.calc", "1", "1");
-		test(verbose, "test/greenLit.calc", "123", "123");
-		test(verbose, "test/greenUnExpMinus.calc", "-1", "-1");
-		test(verbose, "test/greenUnExpMinus2.calc", "(- (- 1 0))", "-1");
-		test(verbose, "test/greenBinExpPlus.calc", "(+ 1 1)", "2");
-		test(verbose, "test/greenBinExpPlus01.calc", "(+ 01)", "1");
-		test(verbose, "test/greenBinExpMinus.calc", "(- 1 1)", "0");
-		test(verbose, "test/greenBinExpDivide.calc", "(/ 5 2)", "2");
-		test(verbose, "test/greenBinExpEqual.calc", "(== 1 2)", "0");
-		test(verbose, "test/greenBinExpEqual2.calc", "(== 3 3)", "1");
-		test(verbose, "test/greenNestedExp.calc", "(+ (- 2 3) (+ 0 1))", "0");
-		test(verbose, "test/greenIf0.calc", "(if 0 1 0)", "0");
-		test(verbose, "test/greenIf0Indent.calc", "(if 0 1 0)", "0");
-		test(verbose, "test/greenIf1.calc", "(if 1 1 0)", "1");
-		test(verbose, "test/greenIf2.calc", "(if 2 1 0)", "1");
-		test(verbose, "test/greenNestedIfInTest.calc", "(if (if 1 1 0) 2 3)", "2");
-		test(verbose, "test/greenNestedIfInBranch.calc", "(if 1 (if 1 2 0) 3)", "2");
-		test(verbose, "test/greenNestedIfInExp.calc", "(+ (if 1 1 0) 1)", "2");
-		test(verbose, "test/greenNestedExpAsTest.calc", "(if (- 1 1) 1 44)", "44");
- 
+		boolean verbose = true;
+		test(verbose, "test/green1.calc", "number", "1234567890");
+		test(verbose, "test/green2.calc", "addition", "2");
+		test(verbose, "test/green3.calc", "arithmetic expression with priority", "7");
+		test(verbose, "test/green4.calc", "unary minus", "-4");
+		test(verbose, "test/green5.calc", "boolean", "0");
+		test(verbose, "test/green6.calc", "boolean expression", "1");
+		test(verbose, "test/green7.calc", "boolean expression with priority", "1");
+		test(verbose, "test/green8.calc", "boolean expression with explicit priority", "0");
+		test(verbose, "test/green9.calc", "unary not", "1");		
+		test(verbose, "test/green10.calc", "conditional", "12");
+		test(verbose, "test/green11.calc", "conditional", "21");
+		test(verbose, "test/green12.calc", "comparison", "1");
+		test(verbose, "test/green13.calc", "nested conditionals", "2");
+		test(verbose, "test/green14.calc", "unequality", "1");
+		test(verbose, "test/green15.calc", "equality", "0");
+//		test(verbose, "test/green16.calc", "equality", "error");
+		test(verbose, "test/green17.calc", "nested divisions", "1");
+		test(verbose, "test/green18.calc", "minus mix", "2");
+		test(verbose, "test/green19.calc", "parenthesized number", "2");
+//		test(verbose, "test/green20.calc", "erroneous expression", "error");
+//		test(verbose, "test/green21.calc", "garbage", "error");
+//		test(verbose, "test/green22.calc", "garbage", "error");
+//		test(verbose, "test/green23.calc", "erroneous conditional", "error");
+//		test(verbose, "test/green24.calc", "erroneous conditional/garbage", "error");
+//		test(verbose, "test/green25.calc", "division by zero", "error");
+//		test(verbose, "test/green26.calc", "division by zero", "error");
+//		test(verbose, "test/green27.calc", "erroneous number", "error");
 		report();
 	}
 }

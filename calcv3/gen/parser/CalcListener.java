@@ -118,13 +118,13 @@ public interface CalcListener extends ParseTreeListener {
 	 */
 	void exitParenExpression(CalcParser.ParenExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code UnaryMinus}
+	 * Enter a parse tree produced by the {@code UnaryExpression}
 	 * labeled alternative in {@link CalcParser#expression}.
 	 * @param ctx the parse tree
 	 */
 	void enterUnaryMinus(CalcParser.UnaryMinusContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code UnaryMinus}
+	 * Exit a parse tree produced by the {@code UnaryExpression}
 	 * labeled alternative in {@link CalcParser#expression}.
 	 * @param ctx the parse tree
 	 */

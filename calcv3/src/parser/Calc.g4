@@ -13,11 +13,12 @@ body     : varDef* expression
 varDef   : '(' '=' variableId expression ')'
          ;
 expression : LITERAL                                            #Literal
+           | BOOLEAN                                            #BooleanLiteral
            | '(' expression ')'                                 #ParenExpression
            | variableId                                         #Variable
-           | (MINUS | NOT) expression                           #UnaryMinus
+           | (MINUS | NOT) expression                           #UnaryExpression
            | expression (OP | MINUS) expression                 #BinaryExpression
-           | expression '?' expression ':' expression           #ConditionalExpression
+           | <assoc = right> expression '?' expression ':' expression           #ConditionalExpression
            | functionId expression*                             #FunctionCall
            ;
 variableId : IDENTIFIER
@@ -27,11 +28,14 @@ functionId : IDENTIFIER
 
 // lexical rules
 
+BOOLEAN  : 'true'
+         | 'false'
+         ;
 MINUS    : '-'
          ;
 NOT      : '!'
          ;
-OP       : '+' | '*' | '/' | '==' | '<'
+OP       : '+' | '*' | '/' | '==' | '<' | '>' | '<=' | '>=' | '!=' | '&&' | '||'
          ;
 IDENTIFIER : ('a'..'z')('a'..'z' | '0'..'9')*
          ;

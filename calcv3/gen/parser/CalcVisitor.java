@@ -76,7 +76,7 @@ public interface CalcVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitParenExpression(CalcParser.ParenExpressionContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code UnaryMinus}
+	 * Visit a parse tree produced by the {@code UnaryExpression}
 	 * labeled alternative in {@link CalcParser#expression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

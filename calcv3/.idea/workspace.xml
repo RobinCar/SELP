@@ -1,7 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a414b9ab-6bc5-47a5-9dd6-b062be119cdc" name="Default Changelist" comment="" />
+    <list default="true" id="a414b9ab-6bc5-47a5-9dd6-b062be119cdc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/CalcListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/CalcListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/CalcVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/CalcVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/BinaryExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/BinaryExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/Op.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/Op.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/UnaryMinus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/ASTVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/ASTVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/Calc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/Calc.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/Calc.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/Calc.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/Calc.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/Calc.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$BinaryExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$BinaryExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$ConditionalExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$ConditionalExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$FunctionCallContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$FunctionCallContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$FunctionIdContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$FunctionIdContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$LiteralContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$LiteralContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$ParenExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$ParenExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$UnaryMinusContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$VariableIdContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser$VariableIdContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/CalcVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/CalcVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/test/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/test/TestBlue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/test/TestErrors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/test/TestGreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/test/TestGreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/test/TestNonRecRed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/test/TestRed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/test/TestRedNoLoop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/BinaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BinaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/Op.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Op.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/UnaryMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/UnaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/ASTVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/ASTVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/Calc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Calc.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/Calc.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Calc.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/Calc.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Calc.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/CalcBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/CalcBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/CalcLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/CalcLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/CalcLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/CalcLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/CalcLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/CalcLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/CalcParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/CalcParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/CalcVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/CalcVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestBlue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestErrors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestGreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestGreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestNonRecRed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestRed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestRedNoLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blueDef.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blueDef2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blueDef3.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blueDefError.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blueRedef.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blueUndef.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorDivide.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorEmpty.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorGarbage.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorGarbage2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorIf.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorIf2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorParens.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorRPar.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorRPar2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorRPar3.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/errorUnaryExp.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenBinExpDivide.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenBinExpEqual.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenBinExpEqual2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenBinExpMinus.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenBinExpPlus.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenBinExpPlus01.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenIf0.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenIf0Indent.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenIf1.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenIf2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenLit.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenNestedExp.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenNestedExpAsTest.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenNestedIfInBranch.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenNestedIfInExp.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenNestedIfInTest.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenOne.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenUnExpMinus.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenUnExpMinus2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenZeroDos.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenZeroTab.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/greenZeroUnix.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFib.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFib0.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFib2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFib3.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFunc0.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFunc1.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFunc2.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFunc3.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFunc4.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFunc5.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFuncRedef.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redFuncs.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redId.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redMutRec.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redOverride.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redParam.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redPlusNoLoop.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/redZarbi.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-lexer0.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-lexer1-dos.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-lexer1-unix.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-lexer2-op.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-lexer3-litteral.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-lexer4-identifier.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-lexer5-Fibo.calc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-parser1.calc" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,12 +126,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parser/ASTVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+            <state relative-caret-position="1170">
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -23,10 +140,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/TestGreen.java">
+        <entry file="file://$PROJECT_DIR$/src/ast/UnaryExpression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            <state relative-caret-position="315">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="25" />
+              <folding>
+                <element signature="e#171#172#0" expanded="true" />
+                <element signature="e#222#223#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calc/Calc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+            <state>
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,21 +176,86 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/parser/Calc.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            <state relative-caret-position="261">
+              <caret line="30" column="7" selection-start-line="30" selection-end-line="30" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/green3.calc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ast/BooleanLiteral.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#184#185#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ast/Op.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/green7.calc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-column="16" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ast/BinaryExpression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>-</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,13 +266,16 @@
         <option value="$PROJECT_DIR$/src/ast/VarDef.java" />
         <option value="$PROJECT_DIR$/src/ast/Expression.java" />
         <option value="$PROJECT_DIR$/src/ast/Body.java" />
-        <option value="$PROJECT_DIR$/src/ast/BinaryExpression.java" />
         <option value="$PROJECT_DIR$/src/calc/TestLexer.java" />
         <option value="$PROJECT_DIR$/src/calc/Calc.java" />
         <option value="$PROJECT_DIR$/src/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/ast/Op.java" />
-        <option value="$PROJECT_DIR$/src/parser/Calc.g4" />
+        <option value="$PROJECT_DIR$/src/test/TestGreen.java" />
+        <option value="$PROJECT_DIR$/src/ast/UnaryMinus.java" />
+        <option value="$PROJECT_DIR$/src/ast/BooleanLiteral.java" />
         <option value="$PROJECT_DIR$/src/parser/ASTVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ast/BinaryExpression.java" />
+        <option value="$PROJECT_DIR$/src/parser/Calc.g4" />
+        <option value="$PROJECT_DIR$/src/ast/Op.java" />
       </list>
     </option>
   </component>
@@ -96,13 +285,14 @@
     <option name="width" value="1400" />
     <option name="height" value="828" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,18 +346,18 @@
     <property name="$PROJECT_DIR$/src/parser/Calc.g4::/gen-visitor" value="true" />
     <property name="$PROJECT_DIR$/src/parser/Calc.g4::/output-dir" value="$PROJECT_DIR$/src" />
     <property name="$PROJECT_DIR$/src/parser/Calc.g4::/package" value="parser" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548693968096" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548922673881" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.." />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -233,34 +423,34 @@
     <frame x="-1" y="-1" width="1442" height="870" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964131" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Tool Output" weight="0.3293011" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="ANTLR Preview" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3293011" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293011" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Tool Output" order="8" weight="0.3293011" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -288,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/UnaryMinus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/AST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -319,13 +502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/TestLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/TestLexer.java" />
     <entry file="jar://$USER_HOME$/Téléchargements/antlr-runtime-4.7.2.jar!/org/antlr/v4/runtime/tree/AbstractParseTreeVisitor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -353,17 +530,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/Op.java">
+    <entry file="file://$PROJECT_DIR$/src/parser/CalcParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        <state relative-caret-position="149">
+          <caret line="368" column="24" selection-start-line="368" selection-start-column="24" selection-end-line="368" selection-end-column="24" />
+          <folding>
+            <element signature="e#12651#12652#0" expanded="true" />
+            <element signature="e#12708#12709#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/BinaryExpression.java">
+    <entry file="file://$PROJECT_DIR$/src/test/TestGreenError.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestGreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calc/Calc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -380,48 +575,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/CalcParser.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/BooleanLiteral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="368" column="24" selection-start-line="368" selection-start-column="24" selection-end-line="368" selection-end-column="24" />
-          <folding>
-            <element signature="e#12651#12652#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calc/Calc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+        <state relative-caret-position="90">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestGreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Calc.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/ASTVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        <state relative-caret-position="1170">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/BinaryExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green7.calc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-column="16" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/Op.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/UnaryExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green3.calc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Calc.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="30" column="7" selection-start-line="30" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>

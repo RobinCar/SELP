@@ -1,7 +1,6 @@
 package test;
 
 import java.io.FileInputStream;
-
 import calc.Calc;
 
 public class Test {
