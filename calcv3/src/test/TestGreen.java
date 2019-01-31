@@ -16,7 +16,7 @@ public class TestGreen extends Test {
 		test(verbose, "test/green6.calc", "boolean expression", "1");
 		test(verbose, "test/green7.calc", "boolean expression with priority", "1");
 		test(verbose, "test/green8.calc", "boolean expression with explicit priority", "0");
-		test(verbose, "test/green9.calc", "unary not", "1");		
+		test(verbose, "test/green9.calc", "unary not", "1");
 		test(verbose, "test/green10.calc", "conditional", "12");
 		test(verbose, "test/green11.calc", "conditional", "21");
 		test(verbose, "test/green12.calc", "comparison", "1");

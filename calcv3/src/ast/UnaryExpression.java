@@ -21,7 +21,7 @@ public class UnaryExpression extends Expression {
 
     @Override
     public String gen() {
-        return null;
+        return "(" + Op.gen(op) + exp.gen() + ")";
     }
 
     @Override

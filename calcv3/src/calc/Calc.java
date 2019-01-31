@@ -54,6 +54,13 @@ public class Calc {
         }
     }
 
+    private static String genMain(String code) {
+        return "#include <stdio.h>\n" +
+                "int main () { \n" +
+                "return printf(\"%d\\n\"," + code + ");\n" +
+                "}\n";
+    }
+
     public static int interpret(InputStream is) throws IOException {
         AST ast = analyze(is);
         return ((Body)ast).eval(new State<Integer>()); // green track
@@ -61,6 +68,7 @@ public class Calc {
     public static void compile(InputStream is, String inputFile) throws IOException {
         AST ast = analyze(is);
         String code = ((Body)ast).gen(); // TODO : update to generate main and possibly blue and red tracks
+        code = Calc.genMain(code);
         if (inputFile != null)
             write(code, inputFile);
         else

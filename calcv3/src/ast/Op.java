@@ -97,4 +97,23 @@ public enum Op {
             default : throw  new SyntaxError("Can't find Symbol");
         }
     }
+
+    public static String gen(Op op) {
+        switch (op) {
+            case MINUS : return "-";
+            case PLUS : return "+";
+            case TIMES : return "*";
+            case DIVIDE : return "/";
+            case EQUAL : return "==";
+            case MORE : return ">";
+            case LESS : return "<";
+            case LESSOREQUAL: return "<=";
+            case MOREOREQUAL: return ">=";
+            case AND : return "&&";
+            case OR : return "||";
+            case NOT : return "!";
+            case NOTEQUAL: return "!=";
+            default : throw  new SyntaxError("Can't find Symbol");
+        }
+    }
 }

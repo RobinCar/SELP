@@ -27,6 +27,6 @@ public class Variable extends Expression {
 
     @Override
     public String gen() {
-        return null;
+        return var;
     }
 }

@@ -23,7 +23,7 @@ public class VarDef extends AST {
 
     @Override
     public String gen() {
-        return null;
+        return var.gen() + "=" + exp.gen() + ";";
     }
 
     public void eval(State<Integer> s) throws IOException {

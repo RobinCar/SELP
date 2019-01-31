@@ -18,7 +18,7 @@ public class BooleanLiteral extends Expression {
 
     @Override
     public String gen() {
-        return null;
+        return Boolean.toString(bool);
     }
 
     @Override

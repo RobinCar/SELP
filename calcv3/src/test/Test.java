@@ -1,6 +1,8 @@
 package test;
 
 import java.io.FileInputStream;
+import java.io.IOException;
+
 import calc.Calc;
 
 public class Test {
@@ -54,6 +56,15 @@ public class Test {
             }
         }
     }
+
+    public static void testCompile(boolean verbose, String filename, String mess1, String mess2){
+        try {
+            Calc.compile(new FileInputStream(filename), filename);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args){
         if (args.length > 0 && args[0].equals("-v"))
             verbose = true;

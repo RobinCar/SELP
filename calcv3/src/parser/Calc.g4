@@ -12,19 +12,20 @@ body     : varDef* expression
          ;
 varDef   : '(' '=' variableId expression ')'
          ;
-expression : LITERAL                                            #Literal
-           | BOOLEAN                                            #BooleanLiteral
-           | '(' expression ')'                                 #ParenExpression
-           | (MINUS | NOT) expression                           #UnaryExpression
-           | expression MULTIPLICATIVE expression                 #BinaryExpression
-           | expression ADDITIVE expression                 #BinaryExpression
-           | expression RELATIONAL expression                 #BinaryExpression
-           | expression EQUALITY expression                 #BinaryExpression
-           | expression AND expression                 #BinaryExpression
-           | expression OR expression                 #BinaryExpression
-           | variableId                                         #Variable
-           | <assoc = right> expression '?' expression ':' expression           #ConditionalExpression
-           | functionId expression*                             #FunctionCall
+expression : LITERAL                                                        #Literal
+           | BOOLEAN                                                        #BooleanLiteral
+           | '(' expression ')'                                             #ParenExpression
+           | (MINUS | NOT) expression                                       #UnaryExpression
+           | expression MULTIPLICATIVE expression                           #BinaryExpression
+           | expression ADDITIVE expression                                 #BinaryExpression
+           | expression RELATIONAL expression                               #BinaryExpression
+           | expression EQUALITY expression                                 #BinaryExpression
+           | expression AND expression                                      #BinaryExpression
+           | expression OR expression                                       #BinaryExpression
+           | variableId                                                     #Variable
+           | <assoc = right> expression '?' expression ':' expression       #ConditionalExpression
+           //| 'if' expression expression expression                          #ConditionalExpression
+           | functionId expression*                                         #FunctionCall
            ;
 variableId : IDENTIFIER
            ;

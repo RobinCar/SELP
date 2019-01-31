@@ -23,7 +23,14 @@ public class Body extends AST {
 
     @Override
     public String gen() {
-        return null;
+        String ret = "";
+        //ret.concat("{");
+        for(VarDef var : defs) {
+            ret = ret.concat("\n" + var.gen());
+        }
+        ret = ret.concat("\n" + exp.gen());
+        //ret.concat("}");
+        return ret ;
     }
 
     public int eval(State<Integer> s) throws IOException {
