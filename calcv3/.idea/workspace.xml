@@ -3,28 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a414b9ab-6bc5-47a5-9dd6-b062be119cdc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/BinaryExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/BinaryExpression.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/Body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/Body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/BooleanLiteral.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/BooleanLiteral.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/ConditionalExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/ConditionalExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/Op.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/Op.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/UnaryExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/UnaryExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/VarDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/VarDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/ast/Variable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/ast/Variable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/calc/Calc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/calc/Calc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/calcv3/parser/Calc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/parser/Calc.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/BinaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BinaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/calcv3/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/calcv3/test/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Body.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/BooleanLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/BooleanLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/ConditionalExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/ConditionalExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Op.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Op.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/UnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/UnaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/VarDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/VarDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/Variable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calc/Calc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calc/Calc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Calc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Calc.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TestGreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestGreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestGreenCompile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/green1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/green1.c" beforeDir="false" afterPath="$PROJECT_DIR$/test/green1.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,18 +21,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calc/Calc.java">
+        <entry file="file://$PROJECT_DIR$/test/green19.calc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="67" column="63" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/TestGreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -55,20 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/TestGreenCompile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/green17.calc">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Test.java">
+        <entry file="file://$PROJECT_DIR$/test/green16.calc">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ast/Body.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="306">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,10 +61,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/green1.c">
+        <entry file="file://$PROJECT_DIR$/test/green14.calc">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/green15.calc">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/green12.calc">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/green10.calc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -119,13 +118,13 @@
         <option value="$PROJECT_DIR$/src/ast/UnaryExpression.java" />
         <option value="$PROJECT_DIR$/src/ast/Variable.java" />
         <option value="$PROJECT_DIR$/src/ast/VarDef.java" />
-        <option value="$PROJECT_DIR$/src/ast/Body.java" />
         <option value="$PROJECT_DIR$/src/ast/ConditionalExpression.java" />
         <option value="$PROJECT_DIR$/src/calc/Calc.java" />
         <option value="$PROJECT_DIR$/src/ast/BooleanLiteral.java" />
         <option value="$PROJECT_DIR$/src/test/Test.java" />
         <option value="$PROJECT_DIR$/src/test/TestGreen.java" />
         <option value="$PROJECT_DIR$/src/test/TestGreenCompile.java" />
+        <option value="$PROJECT_DIR$/src/ast/Body.java" />
       </list>
     </option>
   </component>
@@ -196,7 +195,7 @@
     <property name="$PROJECT_DIR$/src/parser/Calc.g4::/gen-visitor" value="true" />
     <property name="$PROJECT_DIR$/src/parser/Calc.g4::/output-dir" value="$PROJECT_DIR$/src" />
     <property name="$PROJECT_DIR$/src/parser/Calc.g4::/package" value="parser" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548932178446" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548933119464" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -222,14 +221,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestGreenError">
-    <configuration name="Calc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="calc.Calc" />
+  <component name="RunManager" selected="Application.TestGreen">
+    <configuration name="TestGreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestGreen" />
       <module name="calcv3" />
-      <option name="PROGRAM_PARAMETERS" value="test/green1.calc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="calc.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -237,8 +235,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestGreen" />
+    <configuration name="TestGreenCompile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestGreenCompile" />
       <module name="calcv3" />
       <extension name="coverage">
         <pattern>
@@ -290,19 +288,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Calc" />
-      <item itemvalue="Application.TestGreen" />
       <item itemvalue="Application.TestGreenType" />
       <item itemvalue="Application.TestGreenPlus" />
       <item itemvalue="Application.TestGreenError" />
+      <item itemvalue="Application.TestGreenCompile" />
+      <item itemvalue="Application.TestGreen" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestGreen" />
+        <item itemvalue="Application.TestGreenCompile" />
         <item itemvalue="Application.TestGreenError" />
         <item itemvalue="Application.TestGreenPlus" />
         <item itemvalue="Application.TestGreenType" />
-        <item itemvalue="Application.Calc" />
-        <item itemvalue="Application.TestGreen" />
       </list>
     </recent_temporary>
   </component>
@@ -320,10 +318,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1442" height="870" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-1" width="1442" height="870" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26040173" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -332,7 +329,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -444,16 +441,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/green1.calc">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/Body.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/BinaryExpression.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -571,9 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/green16.calc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestGreenType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -615,17 +599,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestGreenCompile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green19.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green19.calc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green14.calc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green15.calc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green12.calc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green10.calc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green16.calc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green17.calc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/green10.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/Body.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestGreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestGreenCompile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
         </state>
       </provider>
     </entry>
