@@ -24,12 +24,12 @@ public class Body extends AST {
     @Override
     public String gen() {
         String ret = "";
-        ret = ret.concat("(");
+        ret = ret.concat("\n");
         for(VarDef var : defs) {
-            ret = ret.concat("\n" + var.gen());
+            ret = ret.concat("\n" + var.gen() + " ");
         }
-        ret = ret.concat("\n" + exp.gen());
-        ret = ret.concat(")");
+        ret = ret.concat("\n" + exp.gen() + " ");
+        ret = ret.concat("\n \n");
         return ret ;
     }
 

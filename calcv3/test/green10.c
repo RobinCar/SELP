@@ -1,9 +1,8 @@
 #include <stdio.h>
 int main () { 
-return printf("%d\n",(
-if (true) {
-12
- }else {
-21
- }));
+return printf("%d\n",
+
+( 1 ? 12 : 21 ) 
+ 
+);
 }

@@ -1,5 +1,8 @@
 #include <stdio.h>
 int main () { 
-return printf("%d\n",(
-(0+2)));
+return printf("%d\n",
+
+(0+2) 
+ 
+);
 }

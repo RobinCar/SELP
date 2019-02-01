@@ -1,5 +1,8 @@
 #include <stdio.h>
 int main () { 
-return printf("%d\n",(
-((!false)&&true)));
+return printf("%d\n",
+
+((!0)&&1) 
+ 
+);
 }

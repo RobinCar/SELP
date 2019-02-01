@@ -10,7 +10,10 @@ public class ASTVisitor extends CalcBaseVisitor<AST> {
 
     @Override
     public AST visitLiteral(CalcParser.LiteralContext ctx) {
-        return new Literal(Integer.parseInt(ctx.getText()));
+        String val = ctx.getText();
+        if(!val.matches("0[0-9]+"))
+            return new Literal(Integer.parseInt(ctx.getText()));
+        throw new SyntaxError("Caractère de la forme 0[0-9]+");
     }
 
     @Override
@@ -54,6 +57,14 @@ public class ASTVisitor extends CalcBaseVisitor<AST> {
         else if(ctx.ADDITIVE() != null){
             try {
                 op = Op.parseOp(ctx.ADDITIVE().getText());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        else if(ctx.MINUS() != null){
+            try {
+                op = Op.parseOp(ctx.MINUS().getText());
             } catch (IOException e) {
                 e.printStackTrace();
             }

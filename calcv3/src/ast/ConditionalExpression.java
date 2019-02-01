@@ -22,12 +22,7 @@ public class ConditionalExpression extends Expression {
     @Override
     public String gen() {
         String ret = "";
-        ret = ret.concat("if (" + exp1.gen() + ") {");
-        ret = ret.concat("\n" + exp2.gen());
-        ret = ret.concat("\n }");
-        ret = ret.concat("else {");
-        ret = ret.concat("\n" + exp3.gen());
-        ret = ret.concat("\n }");
+        ret = ret.concat("( " + exp1.gen() + " ? " + exp2.gen() + " : " + exp3.gen() + " )");
         return ret;
     }
 
