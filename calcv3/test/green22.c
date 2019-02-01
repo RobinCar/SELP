@@ -2,7 +2,7 @@
 int main () { 
 return printf("%d\n",
 
-0 
+1 
  
 );
 }

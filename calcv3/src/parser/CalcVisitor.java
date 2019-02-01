@@ -83,6 +83,13 @@ public interface CalcVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitParenExpression(CalcParser.ParenExpressionContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code Error}
+	 * labeled alternative in {@link CalcParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitError(CalcParser.ErrorContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code UnaryExpression}
 	 * labeled alternative in {@link CalcParser#expression}.
 	 * @param ctx the parse tree
@@ -108,4 +115,10 @@ public interface CalcVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitFunctionId(CalcParser.FunctionIdContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CalcParser#errors}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitErrors(CalcParser.ErrorsContext ctx);
 }

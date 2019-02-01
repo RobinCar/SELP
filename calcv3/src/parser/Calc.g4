@@ -13,9 +13,7 @@ body     : varDef* expression
 varDef   : '(' '=' variableId expression ')'
          ;
 
-expression : LITERAL                                                        #Literal
-           | BOOLEAN                                                        #BooleanLiteral
-           | '(' expression ')'                                             #ParenExpression
+expression : '(' expression ')'                                             #ParenExpression
            | (MINUS | NOT) expression                                       #UnaryExpression
            | expression MULTIPLICATIVE expression                           #BinaryExpression
            | expression ADDITIVE expression                                 #BinaryExpression
@@ -27,11 +25,17 @@ expression : LITERAL                                                        #Lit
            | variableId                                                     #Variable
            | <assoc = right> expression '?' expression ':' expression       #ConditionalExpression
            | functionId expression*                                         #FunctionCall
+           | LITERAL                                                        #Literal
+           | BOOLEAN                                                        #BooleanLiteral
+           | errors                                                         #Error
            ;
 
 variableId : IDENTIFIER
            ;
 functionId : IDENTIFIER
+           ;
+
+errors     : LITERAL LITERAL {notifyErrorListeners("Erreur nombre commençant par 0");}
            ;
 
 
@@ -54,7 +58,7 @@ OP       : '+' | '*' | '/' | '==' | '<' | '>' | '<=' | '>=' | '!=' | '&&' | '||'
          ;
 IDENTIFIER : ('a'..'z')('a'..'z' | '0'..'9')*
          ;
-LITERAL  : ('0'..'9')+
+LITERAL  : '0' | ('1'..'9')('0'..'9')*
          ;
 WS : [ \t\n\r]+ -> channel(HIDDEN) ;
 LINE_COMMENT : '//' ~'\n'* '\n' -> channel(HIDDEN) ;
