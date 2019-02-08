@@ -10,7 +10,7 @@ head     : '(' functionId variableId* ')'
          ;
 body     : varDef* expression
          ;
-varDef   : '(' '=' variableId expression ')'
+varDef   : variableId '=' expression
          ;
 
 expression : '(' expression ')'                                             #ParenExpression

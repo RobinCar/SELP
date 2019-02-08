@@ -1,6 +1,6 @@
 package ast;
 
-import eval.State;
+import check.State;
 
 public class Literal extends Expression {
     int val;
@@ -19,7 +19,7 @@ public class Literal extends Expression {
     }
 
     @Override
-    public int eval(State<Integer> s) {
-        return val;
+    public Type check(State<Type> s) {
+        return Type.INT;
     }
 }

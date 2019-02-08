@@ -1,6 +1,6 @@
 package ast;
 
-import eval.State;
+import check.State;
 import java.io.IOException;
 
 public class Variable extends Expression {
@@ -16,7 +16,7 @@ public class Variable extends Expression {
     }
 
     @Override
-    public int eval(State<Integer> s) throws IOException {
+    public Type check(State<Type> s) throws IOException {
         return s.lookup(var);
     }
 

@@ -1,6 +1,6 @@
 package ast;
 
-import eval.State;
+import check.State;
 
 public class Literal extends Expression {
     int val;

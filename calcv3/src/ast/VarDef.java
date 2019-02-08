@@ -1,13 +1,16 @@
 package ast;
 
-import eval.State;
-import parser.SyntaxError;
+import check.State;
 
 import java.io.IOException;
 
 public class VarDef extends AST {
 
     private Variable var;
+
+    public Variable getVar() {
+        return var;
+    }
 
     private Expression exp;
 
@@ -22,12 +25,12 @@ public class VarDef extends AST {
     }
 
     @Override
-    public String gen() {
-        return var.gen() + "=" + exp.gen() + ";";
+    public String gen() throws IOException {
+        return var.gen() + " = " + exp.gen() + ";";
     }
 
-    public void eval(State<Integer> s) throws IOException {
+    public void check(State<Type> s) throws IOException {
         if(s.containsKey(var.getVar())) throw new IOException("Variable deja presente");
-        s.bind(var.getVar(), exp.eval(s));
+        s.bind(var.getVar(), exp.check(s));
     }
 }

@@ -1,6 +1,6 @@
 package ast;
 
-import eval.State;
+import check.State;
 import parser.SyntaxError;
 
 import java.io.IOException;

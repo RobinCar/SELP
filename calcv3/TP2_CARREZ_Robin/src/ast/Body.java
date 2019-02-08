@@ -1,6 +1,6 @@
 package ast;
 
-import eval.State;
+import check.State;
 
 import java.io.IOException;
 import java.util.List;

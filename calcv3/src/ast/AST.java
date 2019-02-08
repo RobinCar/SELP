@@ -1,5 +1,6 @@
 package ast;
 
+import java.io.IOException;
 import java.lang.reflect.Field;
 
 public abstract class AST {
@@ -33,5 +34,5 @@ public abstract class AST {
 //		return "<" + relativeClassName + ">" + args + "</" + relativeClassName + ">";
     }
 
-    public abstract String gen();
+    public abstract String gen() throws IOException;
 }

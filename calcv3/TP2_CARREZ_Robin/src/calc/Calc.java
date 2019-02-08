@@ -3,7 +3,7 @@ package calc;
 import ast.AST;
 import ast.Body;
 import ast.Expression;
-import eval.State;
+import check.State;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 

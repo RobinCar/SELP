@@ -1,6 +1,6 @@
 package ast;
 
-import eval.State;
+import check.State;
 
 import java.io.IOException;
 
@@ -20,15 +20,16 @@ public class ConditionalExpression extends Expression {
     }
 
     @Override
-    public String gen() {
+    public String gen() throws IOException {
         String ret = "";
         ret = ret.concat("( " + exp1.gen() + " ? " + exp2.gen() + " : " + exp3.gen() + " )");
         return ret;
     }
 
     @Override
-    public int eval(State<Integer> s) throws IOException {
-        if(exp1.eval(s) == 0) return exp3.eval(s);
-        else return exp2.eval(s);
+    public Type check(State<Type> s) throws IOException {
+        if(exp1.check(s) != Type.BOOL || (exp2.check(s) != exp3.check(s)))
+            throw new SemanticError("Condition non valide");
+        return exp2.check(s);
     }
 }

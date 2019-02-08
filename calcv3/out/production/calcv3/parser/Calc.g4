@@ -10,7 +10,7 @@ head     : '(' functionId variableId* ')'
          ;
 body     : varDef* expression
          ;
-varDef   : '(' '=' variableId expression ')'
+varDef   : variableId '=' expression
          ;
 
 expression : '(' expression ')'                                             #ParenExpression
@@ -35,7 +35,7 @@ variableId : IDENTIFIER
 functionId : IDENTIFIER
            ;
 
-errors     : LITERAL LITERAL                            {notifyErrorListeners("Erreur nombre commençant par 0");}
+errors     : LITERAL LITERAL {notifyErrorListeners("Erreur nombre commençant par 0");}
            ;
 
 

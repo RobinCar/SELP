@@ -9,12 +9,18 @@ import java.util.List;
 public class ASTVisitor extends CalcBaseVisitor<AST> {
 
     @Override
+    public AST visitVarDef(CalcParser.VarDefContext ctx) { return new VarDef((Variable) visit(ctx.variableId()), (Expression) visit(ctx.expression())); }
+
+    @Override
     public AST visitLiteral(CalcParser.LiteralContext ctx) {
         return new Literal(Integer.parseInt(ctx.getText()));
     }
 
     @Override
     public AST visitVariable(CalcParser.VariableContext ctx) { return new Variable(ctx.getText()); }
+
+    @Override
+    public AST visitVariableId(CalcParser.VariableIdContext ctx) { return new Variable(ctx.getText()); }
 
     @Override
     public AST visitBody(CalcParser.BodyContext ctx) {

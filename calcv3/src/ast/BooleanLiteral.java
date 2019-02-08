@@ -1,8 +1,6 @@
 package ast;
 
-import eval.State;
-
-import java.io.IOException;
+import check.State;
 
 public class BooleanLiteral extends Expression {
 
@@ -27,8 +25,7 @@ public class BooleanLiteral extends Expression {
     }
 
     @Override
-    public int eval(State<Integer> s) throws IOException {
-        if(bool) return 1;
-        else return 0;
+    public Type check(State<Type> s) {
+        return Type.BOOL;
     }
 }

@@ -1,6 +1,6 @@
 package ast;
 
-import eval.State;
+import check.State;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,9 +11,12 @@ public class Body extends AST {
 
     private Expression exp;
 
+    private State<Type> s;
+
     public Body(List<VarDef> defs, Expression exp) {
         this.defs = defs;
         this.exp = exp;
+        this.s = new State<Type>();
     }
 
     @Override
@@ -22,21 +25,24 @@ public class Body extends AST {
     }
 
     @Override
-    public String gen() {
+    public String gen() throws IOException {
+        this.check(s);
         String ret = "";
         ret = ret.concat("\n");
+        ret = ret.concat( "#include <stdio.h>\n" +
+                "int main () { \n");
         for(VarDef var : defs) {
-            ret = ret.concat("\n" + var.gen() + " ");
+            ret = ret.concat("\n" + s.lookup(var.getVar().getVar()) + " " + var.gen() + "\n");
         }
-        ret = ret.concat("\n" + exp.gen() + " ");
-        ret = ret.concat("\n \n");
+        ret = ret.concat("\nreturn printf(\"%d\\n\", \n\n" + exp.gen() + "\n\n);\n");
+        ret = ret.concat("\n}");
         return ret ;
     }
 
-    public int eval(State<Integer> s) throws IOException {
+    public void check(State<Type> s) throws IOException {
         for (VarDef f:defs){
-            f.eval(s);
+            f.check(s);
         }
-        return this.exp.eval(s);
+        this.exp.check(s);
     }
 }
